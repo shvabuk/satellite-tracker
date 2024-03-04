@@ -1,4 +1,4 @@
-# Skeleton
+# Satellitetracker
 
 A library that shows the location of the ISS relative to the Earth.
 
@@ -6,7 +6,7 @@ A library that shows the location of the ISS relative to the Earth.
 
 src/satellite-tracker.js
 
-## Integration
+## Integration example
 
 ### HTML
 ```html
