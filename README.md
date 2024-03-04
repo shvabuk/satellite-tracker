@@ -1,4 +1,4 @@
-# Satellitetracker
+# Satellite tracker
 
 A library that shows the location of the ISS relative to the Earth.
 
