@@ -1,6 +1,6 @@
 {
   "name": "satellite-tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library that shows the location of the ISS relative to the Earth.",
   "main": "src/satellite-tracker.js",
   "scripts": {
