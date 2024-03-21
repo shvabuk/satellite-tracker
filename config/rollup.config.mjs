@@ -1,28 +1,20 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { babel } from '@rollup/plugin-babel';
 import banner from './banner.mjs';
+import { globSync } from 'glob';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const plugins = [
-  babel({
-    exclude: 'node_modules/**',
-    babelHelpers: 'bundled'
-  })
-];
-
 const rollupConfig = {
-  input: path.resolve(__dirname, `../examples/js/src/index.js`),
-  
+  input: globSync(`${path.resolve(__dirname, '../esm')}**/*.js`),
   output: {
     banner: banner(),
-    file: path.resolve(__dirname, `../examples/js/index.js`),
-    format: 'umd',
+    dir: path.resolve(__dirname, `../commonjs`),
+    format: 'cjs',
     generatedCode: 'es2015',
-    name: 'index',
+    entryFileNames: "[name].cjs"
   },
-  plugins,
-};
+  // external: [],
+}
 
 export default rollupConfig;

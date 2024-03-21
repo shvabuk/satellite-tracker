@@ -1,4 +1,4 @@
-import ISSTracker from '../../../src/iss-tracker.js';
+import ISSTracker from '../../../esm/iss-tracker.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   // ISS Tracker start

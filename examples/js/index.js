@@ -1,5 +1,5 @@
 /*!
-  * A library that shows the location of the ISS relative to the Earth. v1.0.0 (https://github.com/shvabuk/satellite-tracker)
+  * A library that shows the location of the ISS relative to the Earth. v1.0.2 (https://github.com/shvabuk/satellite-tracker)
   * Copyright 2024-2024 Ostap Shvab
   * Licensed under MIT (https://github.com/shvabuk/satellite-tracker/blob/master/LICENSE)
   * 
